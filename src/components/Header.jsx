@@ -4,6 +4,10 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const Header = () => {
   const [toggle, setToggle] = useState(false);
 
+  const toggleMenu = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <div className="bg-[#2699fb]  sticky top-0 z-50 border-b border-white border-opacity-25 shadow-lg">
       <div className="max-w-[1240px] py-[10px] mx-auto flex justify-between items-center">
@@ -13,12 +17,12 @@ const Header = () => {
 
         {toggle ? (
           <AiOutlineClose
-            onClick={() => setToggle(!toggle)}
+            onClick={toggleMenu}
             className="text-white md:text-3xl text-2xl md:mr-0 mr-4 cursor-pointer md:hidden block"
           />
         ) : (
           <AiOutlineMenu
-            onClick={() => setToggle(!toggle)}
+            onClick={toggleMenu}
             className="text-white md:text-3xl text-2xl md:mr-0 mr-4 cursor-pointer md:hidden block"
           />
         )}
@@ -30,6 +34,7 @@ const Header = () => {
           <li>About</li>
           <li>Contact</li>
         </ul>
+
         {/* this is for responsive menu */}
 
         <ul
