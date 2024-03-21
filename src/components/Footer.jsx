@@ -9,12 +9,10 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#2699fb]">
+    <footer id="Footer" className="bg-[#2699fb]">
       <div className="max-w-[1240px] mx-auto md:py-16 py-10 px-6 grid md:grid-cols-2 md:gap-40 gap-10 text-white    ">
         <div className="md:order-1 order-2 ">
-          <h1 className="w-full text-3xl font-bold text-whitek">
-            Ramailo Tech
-          </h1>
+          <h1 className="w-full text-3xl font-bold text-whitek">RamailoTech</h1>
           <p className="py-4">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit
             ullam iste repellat consequatur libero reiciendis, blanditiis

@@ -3,7 +3,7 @@ import Typed from "react-typed";
 
 const Banner = () => {
   return (
-    <div className="bg-[#2699fb] w-full md:py-[50px] py-[20px]">
+    <div id="Banner" className="bg-[#2699fb] w-full md:py-[50px] py-[20px]">
       <div className="max-w-[1240px] mx-auto text-center font-bold my-[100px]">
         <div className="md:text-3xl text-xl md:p-[20px] mb-[10px]">
           Lear with us

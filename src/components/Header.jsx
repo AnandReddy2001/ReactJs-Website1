@@ -28,11 +28,22 @@ const Header = () => {
         )}
 
         <ul className=" hidden md:flex gap-10 text-white cursor-pointer font-bold">
-          <li>Home</li>
-          <li>Company</li>
-          <li>Resources</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            {" "}
+            <a href="#Banner">Home</a>
+          </li>
+          <li>
+            <a href="#experts">Experts</a>
+          </li>
+          <li>
+            <a href="#Cards">Courses</a>
+          </li>
+          <li>
+            <a href="#Newsletter">Contact</a>
+          </li>
+          <li>
+            <a href="#Footer">Footer</a>
+          </li>
         </ul>
 
         {/* this is for responsive menu */}
@@ -41,11 +52,21 @@ const Header = () => {
           className={` duration-300 md:hidden w-full h-screen text-white fixed bg-black top-[52px] cursor-pointer
           ${toggle ? "left-0" : "left-[100%]"}`}
         >
-          <li className="p-5">Home</li>
-          <li className="p-5">Company</li>
-          <li className="p-5">Resources</li>
-          <li className="p-5">About</li>
-          <li className="p-5">Contact</li>
+          <li className="p-5">
+            <a href="#Banner">Home</a>
+          </li>
+          <li className="p-5">
+            <a href="#experts">Experts</a>
+          </li>
+          <li className="p-5">
+            <a href="#Cards">Courses</a>
+          </li>
+          <li className="p-5">
+            <a href="#Newsletter">Contact</a>
+          </li>
+          <li className="p-5">
+            <a href="#Footer">Footer</a>
+          </li>
         </ul>
       </div>
     </div>

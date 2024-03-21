@@ -3,7 +3,10 @@ import img1 from "../Assets/img1.jpg";
 
 const Experts = () => {
   return (
-    <div className="max-w-[1240px] mx-auto my-10  grid md:grid-cols-2 grid-cols-1 ">
+    <div
+      id="experts"
+      className="max-w-[1240px] mx-auto my-10  grid md:grid-cols-2 grid-cols-1 "
+    >
       <div className=" w-[60%] mx-auto">
         <img src={img1} alt="" />
       </div>

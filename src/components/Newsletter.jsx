@@ -28,7 +28,10 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="bg-[#2699fb] md:py-[80px] py-[50px] px-[10px] md:px-0">
+    <div
+      id="Newsletter"
+      className="bg-[#2699fb] md:py-[80px] py-[50px] px-[10px] md:px-0"
+    >
       <div className="md:flex justify-between">
         <div className="text-white pb-[20px] mx-auto max-w-[90%]">
           <h1 className="md:text-[40px] text-[20px] font-bold">
