@@ -10,8 +10,8 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-[#2699fb]">
-      <div className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-white ">
-        <div>
+      <div className="max-w-[1240px] mx-auto md:py-16 py-10 px-6 grid md:grid-cols-2 md:gap-40 gap-10 text-white    ">
+        <div className="md:order-1 order-2 ">
           <h1 className="w-full text-3xl font-bold text-whitek">
             Ramailo Tech
           </h1>
@@ -20,48 +20,48 @@ const Footer = () => {
             ullam iste repellat consequatur libero reiciendis, blanditiis
             accusantium.
           </p>
-          <div className="flex justify-between md:w-[40%] my-6">
+          <div className="flex gap-2 md:justify-between md:w-[40%]  my-2  ">
             <FaFacebookSquare size={30} />
             <FaInstagram size={30} />
             <FaTwitterSquare size={30} />
             <FaGithubSquare size={30} />
           </div>
         </div>
-        <div className="lg:col-span-2 flex justify-between mt-6">
-          <div>
-            <h6 className="font-medium text-black">Solutions</h6>
-            <ul>
-              <li className="py-2 text-sm">Analytics</li>
-              <li className="py-2 text-sm">Marketing</li>
-              <li className="py-2 text-sm">Commerce</li>
-              <li className="py-2 text-sm">Insights</li>
+        <div className=" grid md:grid-cols-4 grid-cols-2 md:gap-14 gap-y-8 md:order-2 order-1 ">
+          <div className="flex flex-col items-center">
+            <h6 className=" text-black font-bold">Solutions</h6>
+            <ul className="md:mt-4 mt-2 ">
+              <li className="py-1 text-sm">Analytics</li>
+              <li className="py-1 text-sm">Marketing</li>
+              <li className="py-1 text-sm">Commerce</li>
+              <li className="py-1 text-sm">Insights</li>
             </ul>
           </div>
-          <div>
-            <h6 className="font-medium text-black">Support</h6>
-            <ul>
-              <li className="py-2 text-sm">Pricing</li>
-              <li className="py-2 text-sm">Documentation</li>
-              <li className="py-2 text-sm">Guides</li>
-              <li className="py-2 text-sm">API Status</li>
+
+          <div className="flex flex-col items-center ">
+            <h6 className=" text-black font-bold">Company</h6>
+            <ul className="md:mt-4 mt-2">
+              <li className="py-1  text-sm">About</li>
+              <li className="py-1  text-sm">Blog</li>
+              <li className="py-1  text-sm">Jobs</li>
+              <li className="py-1 text-sm">Careers</li>
             </ul>
           </div>
-          <div>
-            <h6 className="font-medium text-black">Company</h6>
-            <ul>
-              <li className="py-2 text-sm">About</li>
-              <li className="py-2 text-sm">Blog</li>
-              <li className="py-2 text-sm">Jobs</li>
-              <li className="py-2 text-sm">Press</li>
-              <li className="py-2 text-sm">Careers</li>
+          <div className="flex flex-col items-center">
+            <h6 className=" text-black font-bold">Support</h6>
+            <ul className="md:mt-4 mt-2">
+              <li className="py-1  text-sm">Pricing</li>
+
+              <li className="py-1  text-sm">Guides</li>
+              <li className="py-1  text-sm">API Status</li>
             </ul>
           </div>
-          <div>
-            <h6 className="font-medium text-black">Legal</h6>
-            <ul>
-              <li className="py-2 text-sm">Claim</li>
-              <li className="py-2 text-sm">Policy</li>
-              <li className="py-2 text-sm">Terms</li>
+          <div className="flex flex-col items-center">
+            <h6 className=" text-black font-bold">Legal</h6>
+            <ul className="md:mt-4 mt-2">
+              <li className="py-1  text-sm">Claim</li>
+              <li className="py-1  text-sm">Policy</li>
+              <li className="py-1  text-sm">Terms</li>
             </ul>
           </div>
         </div>

@@ -4,6 +4,7 @@ import * as Yup from "yup";
 
 const Newsletter = () => {
   const [newData, setNewData] = useState([]);
+  const [submitted, setSubmitted] = useState(false);
 
   const initialValues = {
     email: "",
@@ -12,15 +13,18 @@ const Newsletter = () => {
   const validationSchema = Yup.object().shape({
     email: Yup.string()
       .trim()
-      .email("Invalid email address")
-      .required("Email is required"),
+      .email("Invalid email*")
+      .required("Email is required*"),
   });
 
   const handleSubmit = (values, { resetForm }) => {
     console.log("Email submitted:", values.email);
     setNewData([...newData, values.email]);
     resetForm();
-    alert("Email is submitted");
+    setSubmitted(true);
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 2000);
   };
 
   return (
@@ -44,14 +48,19 @@ const Newsletter = () => {
                   <Field
                     type="email"
                     name="email"
-                    className="md:p-3 p-2 mr-1 text-slate-600 outline-none rounded w-64 h-10"
+                    className="md:p-3 p-2 mr-1 text-slate-600 outline-none rounded md:w-56 w-64 h-10"
                     placeholder="Email@company.com"
                   />
                   <ErrorMessage
                     name="email"
                     component="div"
-                    className="text-red-500"
+                    className="text-red-700 font-bold mt-1"
                   />
+                  {submitted && (
+                    <div className="text-green-700  font-bold mt-1 ">
+                      Thank you for subscribing!
+                    </div>
+                  )}
                 </div>
 
                 <button
@@ -59,7 +68,7 @@ const Newsletter = () => {
                   disabled={isSubmitting}
                   className="bg-black text-white md:p-2 p-2 md:mt-0 mt-2 rounded h-10 w-28"
                 >
-                  Notify Me
+                  Subscribe
                 </button>
               </Form>
             )}
