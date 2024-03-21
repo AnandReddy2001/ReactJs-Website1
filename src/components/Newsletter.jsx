@@ -1,22 +1,18 @@
 import React, { useState } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from "yup";
 
 const Newsletter = () => {
-  const [disable, setDisable] = useState(true);
-  const initialValues = {
-    email: "",
+  const [email, setEmail] = useState("");
+  const [submittedEmails, setSubmittedEmails] = useState([]);
+
+  const handleSubmit = () => {
+    console.log("Email submitted:", email);
+    setSubmittedEmails([...submittedEmails, email]);
+    setEmail("");
+    alert("Email is submitted");
   };
 
-  const validationSchema = Yup.object().shape({
-    email: Yup.string().trim().email("Invalid email address*"),
-  });
-
-  const handleSubmit = (values, { resetForm }) => {
-    console.log("Email submitted:", values.email);
-
-    resetForm();
-    alert("Email is submitted");
+  const handleChange = (event) => {
+    setEmail(event.target.value);
   };
 
   return (
@@ -29,38 +25,26 @@ const Newsletter = () => {
           <span>Sign up our newsletter and stay up to date.</span>
         </div>
         <div className="mx-auto  max-w-[90%] ">
-          <Formik
-            initialValues={initialValues}
-            validationSchema={validationSchema}
-            onSubmit={handleSubmit}
-          >
-            {({ isSubmitting }) => (
-              <Form className=" md:flex ">
-                <div className=" flex-colflex ">
-                  {" "}
-                  <Field
-                    type="email"
-                    name="email"
-                    className="md:p-3 p-2 mr-1 text-slate-600 outline-none rounded w-64 h-10"
-                    placeholder="Email..."
-                  />
-                  <ErrorMessage
-                    name="email"
-                    component="div"
-                    className="text-red-500"
-                  />
-                </div>
+          <div className="md:flex ">
+            <div className="flex-colflex ">
+              <input
+                type="email"
+                value={email}
+                onChange={handleChange}
+                className="md:p-3 p-2 mr-1 text-slate-600 outline-none rounded w-64 h-10"
+                placeholder="Email..."
+              />
+            </div>
 
-                <button
-                  type="submit"
-                  disabled={disable}
-                  className="bg-black text-white md:p-2 p-2 md:mt-0 mt-2 rounded h-10 w-28 "
-                >
-                  Notify Me
-                </button>
-              </Form>
-            )}
-          </Formik>
+            <button
+              type="button"
+              disabled={email === ""}
+              onClick={handleSubmit}
+              className="bg-black text-white md:p-2 p-2 md:mt-0 mt-2 rounded h-10 w-28 "
+            >
+              Notify Me
+            </button>
+          </div>
           <br />
           <p className="text-white ">
             We care about the protection of your data. Read out <br />{" "}
