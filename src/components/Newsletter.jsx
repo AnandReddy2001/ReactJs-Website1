@@ -30,7 +30,7 @@ const Newsletter = () => {
   return (
     <div
       id="Newsletter"
-      className="bg-[#2699fb] md:py-[80px] py-[50px] px-[10px] md:px-0"
+      className="bg-[#023b6d] md:py-[80px] py-[50px] px-[10px] md:px-0"
     >
       <div className="md:flex justify-between">
         <div className="text-white pb-[20px] mx-auto max-w-[90%]">
@@ -79,7 +79,7 @@ const Newsletter = () => {
           <br />
           <p className="text-white">
             We care about the protection of your data. Read our <br />
-            <a href="#" className="text-black">
+            <a href="#" className="text-black underline ">
               Privacy Policy
             </a>
           </p>

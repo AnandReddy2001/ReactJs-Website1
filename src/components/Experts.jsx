@@ -18,7 +18,7 @@ const Experts = () => {
           illo, sit, nobis tenetur rerum ut. In quibusdam sequi et eius
           voluptatum laudantium.
         </p>
-        <button className="bg-black text-white md:p-3 p-2 rounded my-2 md:w-[30%] w-[45%]">
+        <button className="bg-[#023b6d] text-white md:p-3 p-2 rounded my-2 md:w-[30%] w-[45%]">
           get started
         </button>
       </div>

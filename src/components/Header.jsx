@@ -9,10 +9,10 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-[#2699fb]  sticky top-0 z-50 border-b border-white border-opacity-25 shadow-lg">
+    <div className="bg-[#023b6d]  sticky top-0 z-50 border-b border-white border-opacity-25 shadow-lg">
       <div className="max-w-[1240px] py-[10px] mx-auto flex justify-between items-center">
         <div className="md:text-3xl text-2xl md:ml-0 ml-4 font-bold text-white">
-          RamailoTech
+          <a href="#Banner">RamailoTech</a>
         </div>
 
         {toggle ? (

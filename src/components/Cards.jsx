@@ -25,7 +25,7 @@ const Cards = () => {
               </p>
               <p className="py-2 border-b mx-8">Lorem Ipsum is simply dumm.</p>
             </div>
-            <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3">
+            <button className="bg-[#023b6d] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 text-white">
               Start Trial
             </button>
           </div>
@@ -67,7 +67,7 @@ const Cards = () => {
               </p>
               <p className="py-2 border-b mx-8">Lorem Ipsum is simply dumm.</p>
             </div>
-            <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3">
+            <button className="bg-[#023b6d] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 text-white">
               Start Trial
             </button>
           </div>
