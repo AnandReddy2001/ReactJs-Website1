@@ -14,18 +14,22 @@ const Cards = () => {
               src={img2}
               alt="/"
             />
-            <h2 className="text-2xl font-bold text-center py-8">
+            <h2 className="md:text-2xl text-xl md:py-8 py-5 font-bold text-center py-8">
               Web Development
             </h2>
-            <p className="text-center text-4xl font-bold">Rs 4999</p>
-            <div className="text-center font-medium">
-              <p className="py-2 border-b mx-8 mt-8">Lorem Ipsum is simply </p>
+            <p className="text-center md:text-4xl text-3xl font-bold">
+              Rs 4999
+            </p>
+            <div className="text-center md:font-medium">
+              <p className="py-2 border-b mx-8 md:mt-8 mt-4">
+                Lorem Ipsum is simply{" "}
+              </p>
               <p className="py-2 border-b mx-8">
                 Lorem Ipsum is simply dummy text of the printing
               </p>
               <p className="py-2 border-b mx-8">Lorem Ipsum is simply dumm.</p>
             </div>
-            <button className="bg-[#023b6d] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 text-white">
+            <button className="bg-[#023b6d] md:w-[200px] w-[150px] rounded-md font-medium my-6 mx-auto px-6 py-3 text-white">
               Start Trial
             </button>
           </div>
@@ -35,18 +39,22 @@ const Cards = () => {
               src={img3}
               alt="/"
             />
-            <h2 className="text-2xl font-bold text-center py-8">
+            <h2 className="md:text-2xl text-xl md:py-8 py-5 font-bold text-center py-8">
               Frontend Development
             </h2>
-            <p className="text-center text-4xl font-bold">Rs 4999</p>
-            <div className="text-center font-medium">
-              <p className="py-2 border-b mx-8 mt-8">Lorem Ipsum is simply </p>
+            <p className="text-center md:text-4xl text-3xl font-bold">
+              Rs 4999
+            </p>
+            <div className="text-center md:font-medium">
+              <p className="py-2 border-b mx-8 md:mt-8 mt-4">
+                Lorem Ipsum is simply{" "}
+              </p>
               <p className="py-2 border-b mx-8">
                 Lorem Ipsum is simply dummy text of the printing
               </p>
               <p className="py-2 border-b mx-8">Lorem Ipsum is simply dumm.</p>
             </div>
-            <button className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3">
+            <button className="bg-black text-[#00df9a] md:w-[200px] w-[150px] rounded-md font-medium my-6 mx-auto px-6 py-3">
               Start Trial
             </button>
           </div>
@@ -56,18 +64,22 @@ const Cards = () => {
               src={img4}
               alt="/"
             />
-            <h2 className="text-2xl font-bold text-center py-8">
+            <h2 className="md:text-2xl text-xl md:py-8 py-5 font-bold text-center ">
               Backend Development
             </h2>
-            <p className="text-center text-4xl font-bold">Rs 4999</p>
-            <div className="text-center font-medium">
-              <p className="py-2 border-b mx-8 mt-8">Lorem Ipsum is simply </p>
+            <p className="text-center md:text-4xl text-3xl font-bold ">
+              Rs 4999
+            </p>
+            <div className="text-center md:font-medium">
+              <p className="py-2 border-b mx-8 md:mt-8 mt-4">
+                Lorem Ipsum is simply{" "}
+              </p>
               <p className="py-2 border-b mx-8">
                 Lorem Ipsum is simply dummy text of the printing
               </p>
               <p className="py-2 border-b mx-8">Lorem Ipsum is simply dumm.</p>
             </div>
-            <button className="bg-[#023b6d] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 text-white">
+            <button className="bg-[#023b6d] md:w-[200px] w-[150px] rounded-md font-medium my-6 mx-auto px-6 py-3 text-white">
               Start Trial
             </button>
           </div>
